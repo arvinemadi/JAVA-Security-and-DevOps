@@ -10,6 +10,7 @@ import com.example.demo.model.requests.ModifyCartRequest;
 //import org.junit.Before;
 //import org.junit.Test;
 //import org.junit.Before;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 
@@ -30,7 +31,7 @@ public class CartControllerTest {
     private CartRepository cartRepo = mock(CartRepository.class);
     private ItemRepository itemRepo = mock(ItemRepository.class);
 
-    @BeforeClass
+    @BeforeMethod
     public void setUp(){
         cartController = new CartController();
 
