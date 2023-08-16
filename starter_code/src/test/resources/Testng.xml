@@ -5,5 +5,5 @@
         <classes>
             <class name="com.example.demo.controllers.CartControllerTest"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite> 
