@@ -4,6 +4,9 @@
     <test name="Regression">
         <classes>
             <class name="com.example.demo.controllers.CartControllerTest"/>
+            <class name="com.example.demo.controllers.UserControllerTest"/>
+            <class name="com.example.demo.controllers.OrderControllerTest"/>
+            <class name="com.example.demo.controllers.ItemControllerTest"/>
         </classes>
     </test>
 </suite>

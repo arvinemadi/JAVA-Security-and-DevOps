@@ -7,12 +7,9 @@ import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.ItemRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
 import com.example.demo.model.requests.ModifyCartRequest;
-//import org.junit.Before;
-//import org.junit.Test;
-//import org.junit.Before;
+
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeClass;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.util.ReflectionTestUtils;

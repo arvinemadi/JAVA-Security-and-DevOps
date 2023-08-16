@@ -5,14 +5,13 @@ import com.example.demo.model.persistence.Cart;
 import com.example.demo.model.persistence.Item;
 import com.example.demo.model.persistence.User;
 import com.example.demo.model.persistence.UserOrder;
-import com.example.demo.model.persistence.repositories.CartRepository;
 import com.example.demo.model.persistence.repositories.OrderRepository;
 import com.example.demo.model.persistence.repositories.UserRepository;
-import com.example.demo.model.requests.CreateUserRequest;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
@@ -31,7 +30,7 @@ public class OrderControllerTest {
 
     private OrderRepository orderRepo = mock(OrderRepository.class);
 
-    @Before
+    @BeforeMethod
     public void setUp() {
         orderController = new OrderController();
         TestUtils.injectObjects(orderController, "userRepository", userRepo);
