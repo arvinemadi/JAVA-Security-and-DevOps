@@ -58,7 +58,7 @@ public class UserControllerTest {
     }
 
     @Test
-    public void verify_findById() throws Exception {
+    public void verify_findById_happy_path() throws Exception {
         User user = new User();
         user.setUsername("Arvin");
         user.setId(1L);
@@ -75,6 +75,15 @@ public class UserControllerTest {
         assertNotNull(userActual);
         assertEquals(user, userActual);
         assertEquals("Arvin", userActual.getUsername());
+
+    }
+
+    @Test
+    public void verify_findById_sad_path() throws Exception {
+        User user = new User();
+        user.setUsername("Arvin");
+        user.setId(1L);
+        user.setPassword("somePassword");
 
         // Test case when the user does exists
         when(userRepo.findById(user.getId())).thenReturn(Optional.empty());
