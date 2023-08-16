@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Testing E-Commerce App">
+    <test name="Regression">
+        <classes>
+            <class name="com.example.demo.controllers.CartControllerTest"/>
+            <class name="com.example.demo.controllers.UserControllerTest"/>
+            <class name="com.example.demo.controllers.OrderControllerTest"/>
+            <class name="com.example.demo.controllers.ItemControllerTest"/>
+        </classes>
+    </test>
+</suite>
